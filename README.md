@@ -1,4 +1,4 @@
-## <center><b>NIGHT-TIME IMAGE ENHANCEMENT</b></center>
+## <p align="center"><b>NIGHT-TIME IMAGE ENHANCEMENT</b></p>
 <br>
 
 ### <b>Introduction </b>
@@ -10,13 +10,11 @@ This method aims at equaling the illuminance of all the pixels by dividing them 
 for each channel so that every pixel can be considered to have illuminance $\{1,1,1\}$.<br>
 These lluminance values can be computed from the following two methods:
 <ol type = 'I'>
-<li> <b>White Patch</b>
-
+<li> <b>White Patch</b><br>
 $I_i = max\{f_i(x, y)\}$.
 
 
-<li> <b>Gray World</b>
-    
+<li> <b>Gray World</b><br>
 $a_i = mean\{f_i (x, y)\}$<br>
 $I_i ≈ 2a_i$
 
@@ -79,6 +77,7 @@ This transmission map thus obtained is used to get the reflectance of the scene 
 A Gamma Correction is proposed to enhance the darker parts of the image more as compared to the brighter parts.
 
 For this, all pixels were scaled down to (0,1) and the following equation was used:
+
 $$
 \begin{equation}
 O_i(x,y) = (I_i(x,y))^\gamma 
@@ -90,27 +89,37 @@ Here $\gamma\in (0,1)$. For this purpose $\gamma$ was taken to be 0.8.
 <br>
 
 ### <b>Results</b>
+
 <br>
-<center>
-<img src="./Results/original.png" style="height : 120px;">
-</center>
-<center> Original Image</center>
+    <p align="center"><img src="./Results/original.png" style="height : 120px;"><br>
+    Original Image</p>
 <br>
-<center>
-<img src="./Results/WP.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Results/GW.png" style="height : 120px">
-</center>
-<center> White Patch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gray World
-</center>
+
+<p align="center"> 
+    <img src="./Results/WP.png" style="height : 120px"> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="./Results/GW.png" style="height : 120px">
+    <br>
+    White Patch         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Gray World
+</p>
+    
 <br>
-<center>
-<img src="./Results/Reference.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Results/Statistical.png" style="height : 120px">
-</center>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statistical Color Transfer
+
+<p align="center">
+    <img src="./Results/Reference.png" style="height : 120px"> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <img src="./Results/Statistical.png" style="height : 120px">
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;'Reference Image
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statistical Color Transfer
+</p>
+    
 <br>
-<br>
-<center>
-<img src="./Results/BD_channel.png" style="height : 120px">
-</center>
-<center> Bright/Dark Channel Prior
-</center>
+    
+<p align="center">  
+    <img src="./Results/BD_channel.png" style="height : 120px">
+    <br>
+    Bright/Dark Channel Prior
+</p>
 
