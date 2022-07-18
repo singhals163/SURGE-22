@@ -79,6 +79,7 @@ This transmission map thus obtained is used to get the reflectance of the scene 
 A Gamma Correction is proposed to enhance the darker parts of the image more as compared to the brighter parts.
 
 For this, all pixels were scaled down to (0,1) and the following equation was used:
+
 $$
 \begin{equation}
 O_i(x,y) = (I_i(x,y))^\gamma 
@@ -90,27 +91,53 @@ Here $\gamma\in (0,1)$. For this purpose $\gamma$ was taken to be 0.8.
 <br>
 
 ### <b>Results</b>
+
 <br>
+
 <center>
+
 <img src="./Results/original.png" style="height : 120px;">
+
 </center>
+
 <center> Original Image</center>
+
 <br>
+
 <center>
-<img src="./Results/WP.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Results/GW.png" style="height : 120px">
+
+<img src="./Results/WP.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<img src="./Results/GW.png" style="height : 120px">
+
 </center>
+
 <center> White Patch &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gray World
+
 </center>
+
 <br>
+
 <center>
-<img src="./Results/Reference.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./Results/Statistical.png" style="height : 120px">
+
+<img src="./Results/Reference.png" style="height : 120px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<img src="./Results/Statistical.png" style="height : 120px">
+
 </center>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reference Image &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Statistical Color Transfer
+
 <br>
+
 <br>
+
 <center>
+
 <img src="./Results/BD_channel.png" style="height : 120px">
+
 </center>
+
 <center> Bright/Dark Channel Prior
+
 </center>
 
